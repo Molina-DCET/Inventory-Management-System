@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory Management System</title>
+</head>
+<body>
+    <div id="name">
+        <div id="Titlename">Item Management System</div>
+        <div id="searchContainer">
+            <label for="searchInput">Search Item</label>
+            <input type="text" id="searchInput" placeholder="Search">
+        </div>
+        <div id="logo"><img src="https://www.clipartmax.com/png/middle/347-3475225_inventory-logo.png" alt="logo"></div>
+    </div>
+    
+    <a href="addItem.html" target="_self" class="openForm">Add Item</a>
+
+    <div id="SortBar">
+        <label for="sortOptions">Sort by:</label>
+        <select id="sortOptions">
+            <option value="" disabled selected>Choose an option</option>
+            <option value="quantity">Quantity</option>
+            <option value="price">Price</option>
+            <option value="date">Date</option>
+        </select>
+    </div>
+
+    <div id="itemList">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Image</th>
+                <th>Remove/Edit</th>
+            </tr>
+            <tbody id="inventoryList"></tbody>
+        </table>    
+    </div>
+    <script src="Project.js"></script>
+</body>
+</html>
